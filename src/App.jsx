@@ -100,8 +100,8 @@
         
     return(
       <div className="todo-list-div">
-          <input type="checkbox" className="todo-checkbox" id="todo-checkbox" onChange={()=>myFunction()} />
-          <label htmlFor="todo-checkbox" className={classname}>{value}</label>
+          <input type="checkbox" className="todo-checkbox" id={myId} onChange={()=>myFunction()} />
+          <label htmlFor={myId} className={classname}>{value}</label>
           <button className="delete-btn" onClick={()=>deleteFunc(myId)}>Delete</button>
       </div>
     )
